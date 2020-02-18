@@ -9,7 +9,8 @@
 import sayHello from './sayHello';
 
 async function printBar() {
-  return await sayHello();
+  let foo = await sayHello();
+  return foo;
 }
 
 printBar().then(result =>
